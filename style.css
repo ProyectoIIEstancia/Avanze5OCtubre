@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+header{
+    height: 5vh;
+    background-color: black;
+    width: 100%;
+}
+
+.back{
+    height: 100%;
+}
+.container{
+    padding: 10090px 0;
+    background-color: #ffff;
+}
+.menu{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    height: 5vh;
+    width: 5%;
+}
+#upg{
+    height: 100%;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffff;
+    display: block;
+    font-family: "AwanZaman Heavy";
+}
+
+.menu .navbar ul li a:hover{
+    color: #15a4f9;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: initial;
+}
+
+
+
+/*responsive logo*/
+@media(max-width:2200px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 39px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    }
+
+/*funcion de inicio de sesion*/
+main{
+    height: 80vh;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-form {
+    border: solid red;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 60%;
+    max-width: 900px;
+    transition: all 1s ease;
+    border: solid thin #eef3e5;
+    align-content: center;
+    justify-content: center;
+}
+
+.information {
+width: 40%;
+display: flex;
+align-items: center;
+text-align: center;
+background-color: #eef3e5;   
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+.info-childs{
+
+width: 100%;
+padding: 0 30px;
+}
+
+.info-childs h2{
+    font-size: 2.5rem;
+}
+
+.info-childs p{
+margin: 15px 0;
+color: #798486;
+}
+
+.info-childs input{
+background-color: #798486 ;
+outline: none;
+border: solid 2px #798486;
+border-radius: 20px;
+padding: 10px 20px;
+color:#f7f8f6;
+cursor:  pointer;
+transition: background-color .3s ease;
+}
+
+.info-childs input:hover{
+    background-color: #fff ;
+    border: #798486;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color:#ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs{
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: black;
+    font-size: 2rem;
+}
+
+.form-information-childs p{
+    color: #555;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color:gray;
+}
+
+.form label i{
+    color: #a7a7a7;
+}
+.form label  input::placeholder{
+    color: #a7a7a7;
+    font-size: 0.3;
+}
+
+.form input[type="submit"]{
+    color: #a7a7a7;
+    background-color:#eef3e5 ;
+    border-radius: 20px;
+    border:none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+    transition: background-color .3s ease;
+}
+
+.form input [type="button"] :hover{
+    background-color: #fff;
+    border: none;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+/*responsive main*/
+@media screen and (max-width:750px) {
+    html{
+        font-size: 12px;
+    }
+    }
+    
+@media screen and (max-width:580px) {
+    html{
+        font-size: 10px;
+    }
+
+.container-form{
+    flex-direction: column;
+    height: auto;
+}
+
+.information{
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    }
+}
+
+.form-information{
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*:::::Pie de Pagina*/
+
+.pie-pagina{
+    align-items: flex-start;
+    height: 30vh;
+    width: 100vw;
+    bottom: 0;
+    background-color: #eef3e5;
+}
+.pie-pagina .grupo-1{
+    height: 80%;   
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: black;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height : 30px;
+}
+.pie-pagina .grupo-1 .box a{
+    color: black;
+    margin-bottom: 10px;
+    line-height : 25px;
+}
+.pie-pagina .grupo-1 .box a:hover{
+    color: blue;
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    line-height : 25px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none; 
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: transparent;
+    text-align: center;
+    transition: all 300ms ease;
+}
+#icono{
+    align-items: center;
+    height: 45px;
+    width: 45px;
+}
+#icono1{
+    background-color: #fff;
+    align-items: center;
+    height: 45px;
+    width: 100px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+
+    height: 20%;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px (ejemplo, smartphones) */
+@media screen and (max-width: 540px) {
+    .pie-pagina .grupo-1{
+        grid-template-columns: repeat(3,3fr);
+        grid-gap:30px;
+        padding:35px 0px
+    }
+    .pie-pagina .grupo-1 .box a{
+        width: 5px;
+        font-size: 5px;
+        line-height: 2px;
+    }
+    .pie-pagina .grupo-1 .box p{
+     font-size: 10px;
+        line-height: 10px;
+    }
+    .box {
+        text-align: center;
+    }
+    .red-social {
+        height: 10px;
+        width: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .red-social a {
+        margin: 0px;
+        font-size: 5px;
+        height: 2vh;
+    }
+    .grupo-2 {
+        height: 10%;
+        text-align: center;
+        font-size: 5px;
+        line-height: .1px;
+    }
+}
+/* Estilos para dispositivos con un ancho máximo de 375px (ejemplo, smartphones en modo retrato) */
+@media screen and (max-width: 375px) {
+    .box {
+        text-align: center;
+    }
+    .red-social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .red-social a {
+        margin: 5px 0;
+    }
+    .grupo-2 {
+        text-align: center;
+    }
+    .grupo-2 small {
+        font-size: 5px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1024px (ejemplo, tablets) */
+@media screen and (max-width: 1024px) {
+    .box {
+        text-align: center;
+    }
+    .red-social {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1200px (ejemplo, pantallas de escritorio) */
+@media screen and (max-width: 1200px) {
+    .red-social {
+        justify-content: flex-start;
+    }
+}
+
+/* Estilos generales para pantallas más grandes */
+.box {
+    text-align: left;
+}
+
+.red-social {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Estilos generales para el pie de página */
+.grupo-2 {
+    background-color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+    color: black;
+}
+
+.grupo-2 small {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

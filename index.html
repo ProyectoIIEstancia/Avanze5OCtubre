@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Universidad politecnica de García</title>
+</head>
+<body>
+
+<header>
+    <div class="back">
+        <div class = "menu container">
+            <a href="#" class="logo">
+                <img src="Logo3.png" id="upg" alt="">
+            </a>
+                <input type="checkbox" id="menu">
+             <label for="menu">
+                <img src="menu.png" class="menu-icono" alt="">
+             </label>
+             <nav class="navbar"
+                ><ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">adiministracion</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container-form">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Registrate</h2>
+                <p>crea o unete a la pagina oficial de estancia upg</p>
+                <a href="registros.html">
+                <input type="button" value="Registrate">
+                </a>
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Inicia sesion</h2>
+                <p>Usa tu matricula y contraseña para acceder</p>
+
+                <form action="InicioSesion.php" method="post" class="form">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Matricula institucional" name="nombre">
+                    </label>
+                    <label> 
+                        <i class='bx bx-lock-open-alt' ></i>
+                        <input type="password"placeholder="Contraseña" name="pass">
+                    </label>
+
+                    <input type="submit" value="Inicia sesion">
+            
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <h2>CONOCENOS</h2>
+            <a href="https://www.upgarcia.edu.mx/instituci%C3%B3n/campus">Ubicación</a><br>
+            <a href="https://www.upgarcia.edu.mx/transparencia/calendario-2023">Calendario 2023</a><br>
+            <a href="https://www.upgarcia.edu.mx/estudiantes/preguntas-frecuentes">Preguntas frecuentes</a>
+     </div>
+            <div class="box" id="CONTACTO">
+            <h2>CONTACTO</h2>
+                <p>Universidad Politécnica de García <br>
+
+                    Prolongación 16 de Septiembre s/n <br>
+                    
+                    Col. Valles de San José Nuevo León <br>
+                    
+                    informacion@upgarcia.edu.mx <br>
+                    
+                    (81)8283-2556</p>
+                
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/upgnl/?locale=es_LA" class="fa fa-facebook">
+                    <img src="Facebook.png" id="icono" alt="">
+                </a>
+                <a href="https://www.instagram.com/updegarcia/" class="fa fa-instagram">
+                    <img src="Instagram.png" id="icono" alt="">
+                </a>
+                <a href="https://twitter.com/upgnl" class="fa fa-twitter">
+                    <img src="twitter.png" id="icono" alt="">
+                </a>
+                <a href="http://nl.gob.mx/" class="fa fa-NL">
+                    <img src="logo nl.png" id="icono1" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>UPG</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+</body>
+</html>
